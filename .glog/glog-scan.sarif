@@ -1,0 +1,81 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-2fabca5f-8d21-4b79-b1b7-af82cfe8f0cf",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Exec Usage Detected\" is a vulnerability that arises when a Python program uses the `exec` function or similar functions like `eval`, `ast.literal_eval`, etc. These functions execute the Python code within them, which can be a security risk if the code contains user input. This is because an attacker can inject malicious code, leading to Remote Code Execution (RCE) attacks.\n\nIn the context of the `ast.unparse` function, the vulnerability can occur if the function is used to unparse an Abstract Syntax Tree (AST) that was created from user input. The unparsed code is then executed using `exec` or similar functions.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid executing dynamic code whenever possible. If you must execute dynamic code, ensure that it does not contain user input. Use safer alternatives to `exec` and `eval` like `ast.literal_eval` when you need to evaluate simple expressions.\n\n## Source Code Fix Recommendation\n\nIf you are using `ast.unparse` to unparse an AST and then executing the resulting code, ensure that the AST does not contain user input. Here is an example of how to do this:\n\n```python\nimport ast\n\n# Assume `user_input` is a string containing user input\ntree = ast.parse(user_input, mode='eval')\n\n# Ensure the AST only contains safe nodes\nfor node in ast.walk(tree):\n    if not isinstance(node, (ast.Num, ast.BinOp, ast.UnaryOp, ast.UAdd, ast.USub)):\n        raise ValueError('Unsafe code detected')\n\n# Unparse the AST and execute the code\ncode = ast.unparse(tree)\nresult = eval(code)\n```\n\nIn this example, the AST is checked to ensure it only contains safe nodes before it is unparsed and executed.\n\n## Library Dependencies\n\nThe `ast` module is part of the Python Standard Library, so no additional library dependencies are required.\n\n## References\n\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B102"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-2fabca5f-8d21-4b79-b1b7-af82cfe8f0cf",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Exec Usage Detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "update_doc.py"
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 5,
+                  "endLine": 96,
+                  "endColumn": 69,
+                  "snippet": {
+                    "text": "    exec(f\"import enum\\n{ast.unparse(enum_def)}\", _globals, _locals)\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 95,
+                  "endLine": 97,
+                  "snippet": {
+                    "text": "    _globals = {}\n    exec(f\"import enum\\n{ast.unparse(enum_def)}\", _globals, _locals)\n    ModelType = _locals[\"ModelType\"]\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "HIGH"
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
