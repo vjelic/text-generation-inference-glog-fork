@@ -12,7 +12,19 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "glog-2fabca5f-8d21-4b79-b1b7-af82cfe8f0cf",
+              "id": "glog-4b0c933a-80f4-4d9c-a171-7358b102cc3e",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Potential Unsafe Use of Temporary File/Directory\" vulnerability in Python refers to the insecure creation and usage of temporary files or directories. This vulnerability can lead to a variety of security issues such as race conditions, unauthorized file access, or information disclosure. It occurs when a program creates a temporary file or directory in an insecure manner, allowing an attacker to predict its name or location.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use secure methods for creating temporary files or directories. Python's `tempfile` module provides several functions to create temporary files and directories securely. These functions generate random, unpredictable names for the temporary files and directories, reducing the risk of an attacker predicting their names or locations.\n\n## Source Code Fix Recommendation\n\nHere is an example of how to securely create a temporary file using the `tempfile` module:\n\n```python\nimport tempfile\n\n# Create a secure temporary file\nwith tempfile.NamedTemporaryFile() as temp:\n    # Use the temporary file\n    pass\n```\n\nIn this example, `tempfile.NamedTemporaryFile()` is used to create a temporary file. This function generates a random, unpredictable name for the file, and automatically deletes it when it is closed.\n\n## Library Dependencies\n\nThe code example requires the following library dependencies:\n\n- Python's built-in `tempfile` module\n\n## References\n\n- [CWE-377: Insecure Temporary File](https://cwe.mitre.org/data/definitions/377.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B108"
+                ]
+              }
+            },
+            {
+              "id": "glog-85dc2e81-e7fe-459a-9292-247bef0ac7bd",
               "help": {
                 "text": "",
                 "markdown": "## Description\n\n\"Exec Usage Detected\" is a vulnerability that arises when a Python program uses the `exec` function or similar functions like `eval`, `ast.literal_eval`, etc. These functions execute the Python code within them, which can be a security risk if the code contains user input. This is because an attacker can inject malicious code, leading to Remote Code Execution (RCE) attacks.\n\nIn the context of the `ast.unparse` function, the vulnerability can occur if the function is used to unparse an Abstract Syntax Tree (AST) that was created from user input. The unparsed code is then executed using `exec` or similar functions.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid executing dynamic code whenever possible. If you must execute dynamic code, ensure that it does not contain user input. Use safer alternatives to `exec` and `eval` like `ast.literal_eval` when you need to evaluate simple expressions.\n\n## Source Code Fix Recommendation\n\nIf you are using `ast.unparse` to unparse an AST and then executing the resulting code, ensure that the AST does not contain user input. Here is an example of how to do this:\n\n```python\nimport ast\n\n# Assume `user_input` is a string containing user input\ntree = ast.parse(user_input, mode='eval')\n\n# Ensure the AST only contains safe nodes\nfor node in ast.walk(tree):\n    if not isinstance(node, (ast.Num, ast.BinOp, ast.UnaryOp, ast.UAdd, ast.USub)):\n        raise ValueError('Unsafe code detected')\n\n# Unparse the AST and execute the code\ncode = ast.unparse(tree)\nresult = eval(code)\n```\n\nIn this example, the AST is checked to ensure it only contains safe nodes before it is unparsed and executed.\n\n## Library Dependencies\n\nThe `ast` module is part of the Python Standard Library, so no additional library dependencies are required.\n\n## References\n\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)"
@@ -35,7 +47,44 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "glog-2fabca5f-8d21-4b79-b1b7-af82cfe8f0cf",
+          "ruleId": "glog-4b0c933a-80f4-4d9c-a171-7358b102cc3e",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential Unsafe Use of Temporary File/Directory"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server/text_generation_server/cli.py"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 22,
+                  "endLine": 36,
+                  "endColumn": 51,
+                  "snippet": {
+                    "text": "        assert (\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 41,
+                  "endLine": 55,
+                  "snippet": {
+                    "text": "    trust_remote_code: bool = False,\n    uds_path: Path = \"/tmp/text-generation-server\",\n    logger_level: str = \"INFO\",\n    json_output: bool = False,\n    otlp_endpoint: Optional[str] = None,\n    otlp_service_name: str = \"text-generation-inference.server\",\n    max_input_tokens: Optional[int] = None,\n):\n    if sharded:\n        assert (\n            os.getenv(\"RANK\", None) is not None\n        ), \"RANK must be set when sharded is True\"\n        assert (\n            os.getenv(\"WORLD_SIZE\", None) is not None\n        ), \"WORLD_SIZE must be set when sharded is True\"\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "MEDIUM"
+          }
+        },
+        {
+          "ruleId": "glog-85dc2e81-e7fe-459a-9292-247bef0ac7bd",
           "kind": "fail",
           "level": "warning",
           "message": {
