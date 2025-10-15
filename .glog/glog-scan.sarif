@@ -36,30 +36,6 @@
               }
             },
             {
-              "id": "de1f393f-71e4-3df7-977f-c688b3732fdb",
-              "name": "resources.rules.missing-image-version",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
-              },
-              "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-image-version"
-                ]
-              }
-            },
-            {
               "id": "3e69fe31-f580-3e4d-b3be-117277202f2f",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
@@ -84,7 +60,55 @@
               }
             },
             {
+              "id": "de1f393f-71e4-3df7-977f-c688b3732fdb",
+              "name": "resources.rules.missing-image-version",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
+              },
+              "fullDescription": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-image-version"
+                ]
+              }
+            },
+            {
               "id": "2f127af7-f19c-3a34-8676-0aa34843bda9",
+              "name": "resources.rules.missing-image-version",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
+              },
+              "fullDescription": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-image-version"
+                ]
+              }
+            },
+            {
+              "id": "f2770cfe-3c6e-3916-bb67-166bfe8d7cc1",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -156,30 +180,6 @@
               }
             },
             {
-              "id": "f2770cfe-3c6e-3916-bb67-166bfe8d7cc1",
-              "name": "resources.rules.missing-image-version",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
-              },
-              "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-image-version"
-                ]
-              }
-            },
-            {
               "id": "0ab951fd-bc5c-33d0-b86f-2ae367fc9c3f",
               "name": "resources.rules.remove-package-cache",
               "shortDescription": {
@@ -200,30 +200,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.remove-package-cache"
-                ]
-              }
-            },
-            {
-              "id": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
-              "name": "resources.rules.missing-image-version",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
-              },
-              "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-image-version"
                 ]
               }
             },
@@ -276,6 +252,30 @@
               }
             },
             {
+              "id": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
+              "name": "resources.rules.missing-image-version",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
+              },
+              "fullDescription": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-image-version"
+                ]
+              }
+            },
+            {
               "id": "6b5c3a58-d4d4-33a7-be70-7bf6d6dc39b0",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
@@ -300,7 +300,7 @@
               }
             },
             {
-              "id": "0874da03-257d-32e5-8adf-d2fc3749f5f7",
+              "id": "1bc46cf6-face-3c39-80c7-3452d8243629",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -324,7 +324,7 @@
               }
             },
             {
-              "id": "1bc46cf6-face-3c39-80c7-3452d8243629",
+              "id": "0874da03-257d-32e5-8adf-d2fc3749f5f7",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -1644,7 +1644,7 @@
               }
             },
             {
-              "id": "e45280c3-61f7-3d1c-ad4b-d11241a69dd0",
+              "id": "618bb975-dbec-3ecc-a006-bddbc43d42b4",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -1668,7 +1668,7 @@
               }
             },
             {
-              "id": "618bb975-dbec-3ecc-a006-bddbc43d42b4",
+              "id": "e45280c3-61f7-3d1c-ad4b-d11241a69dd0",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -1836,6 +1836,30 @@
               }
             },
             {
+              "id": "5efdff69-dd92-3bb1-9c99-c9d9e7303bf7",
+              "name": "resources.rules.use-raise-for-status",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-raise-for-status"
+              },
+              "fullDescription": {
+                "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://requests.readthedocs.io/en/master/api/#requests.Response.raise_for_status](https://requests.readthedocs.io/en/master/api/#requests.Response.raise_for_status)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-raise-for-status"
+                ]
+              }
+            },
+            {
               "id": "2fcdf144-d6b9-3416-b252-7a1c232939f4",
               "name": "resources.rules.use-raise-for-status",
               "shortDescription": {
@@ -1880,30 +1904,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.missing-ratelimit"
-                ]
-              }
-            },
-            {
-              "id": "5efdff69-dd92-3bb1-9c99-c9d9e7303bf7",
-              "name": "resources.rules.use-raise-for-status",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-raise-for-status"
-              },
-              "fullDescription": {
-                "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://requests.readthedocs.io/en/master/api/#requests.Response.raise_for_status](https://requests.readthedocs.io/en/master/api/#requests.Response.raise_for_status)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-raise-for-status"
                 ]
               }
             },
@@ -3508,68 +3508,6 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "85e56ba6-8be4-34d1-b883-27edc39636a6",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 1,
-                  "endLine": 21,
-                  "endColumn": 19,
-                  "snippet": {
-                    "text": "RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "5e22b0c34e83bf79efa9a77031a36d3f350db625eaac83de6e71bc37803aa1178b1d4c305de33eb4d35b4632b149df8f8293c20e4be74a38aa8ed5dc74d88919_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "de1f393f-71e4-3df7-977f-c688b3732fdb",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 2,
-                  "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 20,
-                  "snippet": {
-                    "text": "FROM lukemathwalker/cargo-chef:latest-rust-1.80 AS chef"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "fc7f9203dbe4e6f729bcb21fca2240fc922e5ed04299c7100cad510eb87858bcb6de7bbbe26e0eab589ae6d5741c3c94d417eb9ae744e8d360e1d9726c55e9e5_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "3e69fe31-f580-3e4d-b3be-117277202f2f",
           "kind": "fail",
           "level": "warning",
@@ -3601,6 +3539,37 @@
           "properties": {}
         },
         {
+          "ruleId": "85e56ba6-8be4-34d1-b883-27edc39636a6",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 1,
+                  "endLine": 21,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "5e22b0c34e83bf79efa9a77031a36d3f350db625eaac83de6e71bc37803aa1178b1d4c305de33eb4d35b4632b149df8f8293c20e4be74a38aa8ed5dc74d88919_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "2f127af7-f19c-3a34-8676-0aa34843bda9",
           "kind": "fail",
           "level": "warning",
@@ -3628,6 +3597,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "02f6b5decb128e845d8a96f5f9eee74a87832131d00f21de011e9a46eb07c35316a7e9adb7af043b3243453bfe9a84adbf8edd9425be896d0701e9d73a580aa5_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "f2770cfe-3c6e-3916-bb67-166bfe8d7cc1",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 1,
+                  "endLine": 92,
+                  "endColumn": 13,
+                  "snippet": {
+                    "text": "FROM pytorch-install AS kernel-builder"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "c6a29ca6d3cf629abf7f2d499481d52f0b79f72fbd91e2da91b8b450e9393ed035ef4793dbf6c6ee4144c58cc928fb0e324f7f5dca84c37fd5b1eff317a47b2f_0"
           },
           "properties": {}
         },
@@ -3694,37 +3694,6 @@
           "properties": {}
         },
         {
-          "ruleId": "f2770cfe-3c6e-3916-bb67-166bfe8d7cc1",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 1,
-                  "endLine": 92,
-                  "endColumn": 13,
-                  "snippet": {
-                    "text": "FROM pytorch-install AS kernel-builder"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "c6a29ca6d3cf629abf7f2d499481d52f0b79f72fbd91e2da91b8b450e9393ed035ef4793dbf6c6ee4144c58cc928fb0e324f7f5dca84c37fd5b1eff317a47b2f_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "0ab951fd-bc5c-33d0-b86f-2ae367fc9c3f",
           "kind": "fail",
           "level": "warning",
@@ -3752,37 +3721,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "5e22b0c34e83bf79efa9a77031a36d3f350db625eaac83de6e71bc37803aa1178b1d4c305de33eb4d35b4632b149df8f8293c20e4be74a38aa8ed5dc74d88919_2"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 102,
-                  "startColumn": 1,
-                  "endLine": 102,
-                  "endColumn": 12,
-                  "snippet": {
-                    "text": "FROM kernel-builder AS flash-att-builder"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_0"
           },
           "properties": {}
         },
@@ -3849,6 +3787,37 @@
           "properties": {}
         },
         {
+          "ruleId": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 1,
+                  "endLine": 102,
+                  "endColumn": 12,
+                  "snippet": {
+                    "text": "FROM kernel-builder AS flash-att-builder"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "6b5c3a58-d4d4-33a7-be70-7bf6d6dc39b0",
           "kind": "fail",
           "level": "warning",
@@ -3880,37 +3849,6 @@
           "properties": {}
         },
         {
-          "ruleId": "0874da03-257d-32e5-8adf-d2fc3749f5f7",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 137,
-                  "startColumn": 1,
-                  "endLine": 137,
-                  "endColumn": 12,
-                  "snippet": {
-                    "text": "FROM kernel-builder AS awq-kernels-builder"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_4"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "1bc46cf6-face-3c39-80c7-3452d8243629",
           "kind": "fail",
           "level": "warning",
@@ -3938,6 +3876,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_5"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "0874da03-257d-32e5-8adf-d2fc3749f5f7",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 1,
+                  "endLine": 137,
+                  "endColumn": 12,
+                  "snippet": {
+                    "text": "FROM kernel-builder AS awq-kernels-builder"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_4"
           },
           "properties": {}
         },
@@ -5616,37 +5585,6 @@
           "properties": {}
         },
         {
-          "ruleId": "e45280c3-61f7-3d1c-ad4b-d11241a69dd0",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "backends/trtllm/Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 1,
-                  "endLine": 8,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "FROM chef AS planner"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "3cb9391c774075590eb31f7697212a4b587dacb29342504c756edf199f9110a7badb66b048999a03c2e4fa09882cf13ed2b1189c377a513b4fa4b62742303680_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "618bb975-dbec-3ecc-a006-bddbc43d42b4",
           "kind": "fail",
           "level": "warning",
@@ -5674,6 +5612,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "4854cc51b6e5b5ba6b18dc6ac5bb6462f950579285b4ef11bfc16558cb6f204a409570a195348401c0adf0561204d8c57d030e8db3f2c56f4eaff3c191a95db2_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "e45280c3-61f7-3d1c-ad4b-d11241a69dd0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "backends/trtllm/Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "FROM chef AS planner"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "3cb9391c774075590eb31f7697212a4b587dacb29342504c756edf199f9110a7badb66b048999a03c2e4fa09882cf13ed2b1189c377a513b4fa4b62742303680_0"
           },
           "properties": {}
         },
@@ -5864,6 +5833,37 @@
           "properties": {}
         },
         {
+          "ruleId": "5efdff69-dd92-3bb1-9c99-c9d9e7303bf7",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "clients/python/text_generation/client.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 380,
+                  "startColumn": 16,
+                  "endLine": 386,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "        resp = requests.post(\n            self.base_url,\n            json=request.dict(),\n            headers=self.headers,\n            cookies=self.cookies,\n            timeout=self.timeout,\n        )"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "1c8a9f04e816c5e2d38e776bf9656a6c0196589bd28e3e1131e48be8ec629da57b6d68a2428876327a2fa8af1163792a844deb14aad1d1cdf15ee4a4b7f09f9f_4"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "2fcdf144-d6b9-3416-b252-7a1c232939f4",
           "kind": "fail",
           "level": "warning",
@@ -5922,37 +5922,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "2e1e069d6a59a5bfe97567069d6debd3a4c19de25ba98a40bbd7c741776523cf7c0009537bfdb888393d441fe1c2f8266d38ebafa6c07138e3f8e880242aaa45_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "5efdff69-dd92-3bb1-9c99-c9d9e7303bf7",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "clients/python/text_generation/client.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 380,
-                  "startColumn": 16,
-                  "endLine": 386,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "        resp = requests.post(\n            self.base_url,\n            json=request.dict(),\n            headers=self.headers,\n            cookies=self.cookies,\n            timeout=self.timeout,\n        )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "1c8a9f04e816c5e2d38e776bf9656a6c0196589bd28e3e1131e48be8ec629da57b6d68a2428876327a2fa8af1163792a844deb14aad1d1cdf15ee4a4b7f09f9f_4"
           },
           "properties": {}
         },
