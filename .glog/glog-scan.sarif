@@ -12,30 +12,6 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "85e56ba6-8be4-34d1-b883-27edc39636a6",
-              "name": "resources.rules.remove-package-cache",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.remove-package-cache"
-              },
-              "fullDescription": {
-                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3009](https://github.com/hadolint/hadolint/wiki/DL3009)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.remove-package-cache"
-                ]
-              }
-            },
-            {
               "id": "3e69fe31-f580-3e4d-b3be-117277202f2f",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
@@ -60,7 +36,7 @@
               }
             },
             {
-              "id": "de1f393f-71e4-3df7-977f-c688b3732fdb",
+              "id": "2f127af7-f19c-3a34-8676-0aa34843bda9",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -84,7 +60,31 @@
               }
             },
             {
-              "id": "2f127af7-f19c-3a34-8676-0aa34843bda9",
+              "id": "85e56ba6-8be4-34d1-b883-27edc39636a6",
+              "name": "resources.rules.remove-package-cache",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.remove-package-cache"
+              },
+              "fullDescription": {
+                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3009](https://github.com/hadolint/hadolint/wiki/DL3009)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.remove-package-cache"
+                ]
+              }
+            },
+            {
+              "id": "de1f393f-71e4-3df7-977f-c688b3732fdb",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -204,7 +204,7 @@
               }
             },
             {
-              "id": "d7efcb24-f906-3cb9-95ad-17450a48ea71",
+              "id": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -252,7 +252,7 @@
               }
             },
             {
-              "id": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
+              "id": "d7efcb24-f906-3cb9-95ad-17450a48ea71",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -300,7 +300,7 @@
               }
             },
             {
-              "id": "1bc46cf6-face-3c39-80c7-3452d8243629",
+              "id": "0874da03-257d-32e5-8adf-d2fc3749f5f7",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -324,7 +324,7 @@
               }
             },
             {
-              "id": "0874da03-257d-32e5-8adf-d2fc3749f5f7",
+              "id": "1bc46cf6-face-3c39-80c7-3452d8243629",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -876,6 +876,30 @@
               }
             },
             {
+              "id": "05874534-965b-3a28-b356-4f82cf51a3dc",
+              "name": "resources.rules.missing-image-version",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
+              },
+              "fullDescription": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-image-version"
+                ]
+              }
+            },
+            {
               "id": "166cca2f-b045-3ecb-a6cd-8494fc5ae744",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -920,30 +944,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.use-workdir"
-                ]
-              }
-            },
-            {
-              "id": "05874534-965b-3a28-b356-4f82cf51a3dc",
-              "name": "resources.rules.missing-image-version",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
-              },
-              "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-image-version"
                 ]
               }
             },
@@ -1164,6 +1164,30 @@
               }
             },
             {
+              "id": "21441810-f1e6-3e8a-808a-c17f8e9d0ae3",
+              "name": "resources.rules.remove-package-cache",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.remove-package-cache"
+              },
+              "fullDescription": {
+                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3009](https://github.com/hadolint/hadolint/wiki/DL3009)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.remove-package-cache"
+                ]
+              }
+            },
+            {
               "id": "7df6eb27-84eb-3b59-97a2-c99e5cdac80c",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
@@ -1212,30 +1236,6 @@
               }
             },
             {
-              "id": "21441810-f1e6-3e8a-808a-c17f8e9d0ae3",
-              "name": "resources.rules.remove-package-cache",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.remove-package-cache"
-              },
-              "fullDescription": {
-                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3009](https://github.com/hadolint/hadolint/wiki/DL3009)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.remove-package-cache"
-                ]
-              }
-            },
-            {
               "id": "9a4202ba-331c-344b-8199-36efb946effd",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
@@ -1256,54 +1256,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.missing-image-version"
-                ]
-              }
-            },
-            {
-              "id": "e9c959a8-836a-3719-8f23-b8b921695971",
-              "name": "resources.rules.last-user-is-root",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.last-user-is-root"
-              },
-              "fullDescription": {
-                "text": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3002](https://github.com/hadolint/hadolint/wiki/DL3002)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.last-user-is-root"
-                ]
-              }
-            },
-            {
-              "id": "a55af156-7a8e-3b64-b640-4828a5de04a4",
-              "name": "resources.rules.set-pipefail",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.set-pipefail"
-              },
-              "fullDescription": {
-                "text": "Only the exit code from the final command in this RUN instruction will be evaluated unless 'pipefail' is set.\nIf you want to fail the command at any stage in the pipe, set 'pipefail' by including 'SHELL [\"/bin/bash\", \"-o\", \"pipefail\", \"-c\"] before the command.\nIf you're using alpine and don't have bash installed, communicate this explicitly with `SHELL [\"/bin/ash\"]`.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Only the exit code from the final command in this RUN instruction will be evaluated unless 'pipefail' is set.\nIf you want to fail the command at any stage in the pipe, set 'pipefail' by including 'SHELL [\"/bin/bash\", \"-o\", \"pipefail\", \"-c\"] before the command.\nIf you're using alpine and don't have bash installed, communicate this explicitly with `SHELL [\"/bin/ash\"]`.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Only the exit code from the final command in this RUN instruction will be evaluated unless 'pipefail' is set.\nIf you want to fail the command at any stage in the pipe, set 'pipefail' by including 'SHELL [\"/bin/bash\", \"-o\", \"pipefail\", \"-c\"] before the command.\nIf you're using alpine and don't have bash installed, communicate this explicitly with `SHELL [\"/bin/ash\"]`.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL4006](https://github.com/hadolint/hadolint/wiki/DL4006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.set-pipefail"
                 ]
               }
             },
@@ -1332,6 +1284,54 @@
               }
             },
             {
+              "id": "a55af156-7a8e-3b64-b640-4828a5de04a4",
+              "name": "resources.rules.set-pipefail",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.set-pipefail"
+              },
+              "fullDescription": {
+                "text": "Only the exit code from the final command in this RUN instruction will be evaluated unless 'pipefail' is set.\nIf you want to fail the command at any stage in the pipe, set 'pipefail' by including 'SHELL [\"/bin/bash\", \"-o\", \"pipefail\", \"-c\"] before the command.\nIf you're using alpine and don't have bash installed, communicate this explicitly with `SHELL [\"/bin/ash\"]`.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Only the exit code from the final command in this RUN instruction will be evaluated unless 'pipefail' is set.\nIf you want to fail the command at any stage in the pipe, set 'pipefail' by including 'SHELL [\"/bin/bash\", \"-o\", \"pipefail\", \"-c\"] before the command.\nIf you're using alpine and don't have bash installed, communicate this explicitly with `SHELL [\"/bin/ash\"]`.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Only the exit code from the final command in this RUN instruction will be evaluated unless 'pipefail' is set.\nIf you want to fail the command at any stage in the pipe, set 'pipefail' by including 'SHELL [\"/bin/bash\", \"-o\", \"pipefail\", \"-c\"] before the command.\nIf you're using alpine and don't have bash installed, communicate this explicitly with `SHELL [\"/bin/ash\"]`.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL4006](https://github.com/hadolint/hadolint/wiki/DL4006)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.set-pipefail"
+                ]
+              }
+            },
+            {
+              "id": "e9c959a8-836a-3719-8f23-b8b921695971",
+              "name": "resources.rules.last-user-is-root",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.last-user-is-root"
+              },
+              "fullDescription": {
+                "text": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3002](https://github.com/hadolint/hadolint/wiki/DL3002)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.last-user-is-root"
+                ]
+              }
+            },
+            {
               "id": "95600396-7aac-33f2-ab43-5fe6e5b6d4bd",
               "name": "resources.rules.remove-package-cache",
               "shortDescription": {
@@ -1352,30 +1352,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.remove-package-cache"
-                ]
-              }
-            },
-            {
-              "id": "a372ba03-4d25-39fc-a85a-d7d0ccdd75c5",
-              "name": "resources.rules.use-workdir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-workdir"
-              },
-              "fullDescription": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-workdir"
                 ]
               }
             },
@@ -1428,6 +1404,30 @@
               }
             },
             {
+              "id": "a372ba03-4d25-39fc-a85a-d7d0ccdd75c5",
+              "name": "resources.rules.use-workdir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-workdir"
+              },
+              "fullDescription": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-workdir"
+                ]
+              }
+            },
+            {
               "id": "6829c931-55c7-31d5-847c-825e30c4b766",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
@@ -1476,30 +1476,6 @@
               }
             },
             {
-              "id": "50466b96-5192-3e3f-ba72-42c996df0478",
-              "name": "resources.rules.missing-pip-no-cache-dir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
-              },
-              "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
-                ]
-              }
-            },
-            {
               "id": "7b467188-d61a-329b-9013-39b9226bf14e",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -1524,7 +1500,55 @@
               }
             },
             {
+              "id": "50466b96-5192-3e3f-ba72-42c996df0478",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
               "id": "dbc125fb-c196-3dc5-9007-f7ef3605c309",
+              "name": "resources.rules.use-workdir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-workdir"
+              },
+              "fullDescription": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-workdir"
+                ]
+              }
+            },
+            {
+              "id": "d934f3f7-4d4e-3f27-b1de-78d73467caf3",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.use-workdir"
@@ -1596,55 +1620,7 @@
               }
             },
             {
-              "id": "d934f3f7-4d4e-3f27-b1de-78d73467caf3",
-              "name": "resources.rules.use-workdir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-workdir"
-              },
-              "fullDescription": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-workdir"
-                ]
-              }
-            },
-            {
               "id": "58d01568-d711-30db-915f-a2c1371a4e88",
-              "name": "resources.rules.missing-image-version",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
-              },
-              "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-image-version"
-                ]
-              }
-            },
-            {
-              "id": "618bb975-dbec-3ecc-a006-bddbc43d42b4",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -1716,6 +1692,30 @@
               }
             },
             {
+              "id": "618bb975-dbec-3ecc-a006-bddbc43d42b4",
+              "name": "resources.rules.missing-image-version",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
+              },
+              "fullDescription": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-image-version"
+                ]
+              }
+            },
+            {
               "id": "683ab3e2-b199-3334-b5ad-2f32951afd3e",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -1740,7 +1740,7 @@
               }
             },
             {
-              "id": "d54acaa3-11b6-3c9d-99fa-066357e7aadc",
+              "id": "ed69c037-d405-3473-813d-847998c18419",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -1764,7 +1764,7 @@
               }
             },
             {
-              "id": "ed69c037-d405-3473-813d-847998c18419",
+              "id": "d54acaa3-11b6-3c9d-99fa-066357e7aadc",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -1813,30 +1813,6 @@
             },
             {
               "id": "b1095086-7418-3eb3-96d1-3635528bcace",
-              "name": "resources.rules.use-raise-for-status",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-raise-for-status"
-              },
-              "fullDescription": {
-                "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://requests.readthedocs.io/en/master/api/#requests.Response.raise_for_status](https://requests.readthedocs.io/en/master/api/#requests.Response.raise_for_status)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-raise-for-status"
-                ]
-              }
-            },
-            {
-              "id": "5efdff69-dd92-3bb1-9c99-c9d9e7303bf7",
               "name": "resources.rules.use-raise-for-status",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.use-raise-for-status"
@@ -1932,7 +1908,7 @@
               }
             },
             {
-              "id": "9cceaed1-92f9-368a-9f37-3b49363817b0",
+              "id": "4a74db2b-c9c1-32ea-a336-8c5fb1795b60",
               "name": "resources.rules.missing-ratelimit",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-ratelimit"
@@ -1956,7 +1932,7 @@
               }
             },
             {
-              "id": "4a74db2b-c9c1-32ea-a336-8c5fb1795b60",
+              "id": "9cceaed1-92f9-368a-9f37-3b49363817b0",
               "name": "resources.rules.missing-ratelimit",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-ratelimit"
@@ -2028,26 +2004,27 @@
               }
             },
             {
-              "id": "7eaa91b0-e099-3ecd-9369-93cad3f7295e",
-              "name": "resources.rules.arbitrary-sleep",
+              "id": "4f0d019c-5f19-323b-8930-ca90b6ce23b0",
+              "name": "python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.arbitrary-sleep"
+                "text": "Opengrep Finding: python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run"
               },
               "fullDescription": {
-                "text": "time.sleep() call; did you mean to leave this in?"
+                "text": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "error"
+                "level": "warning"
               },
+              "helpUri": "https://semgrep.dev/r/python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run",
               "help": {
-                "text": "time.sleep() call; did you mean to leave this in?\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "time.sleep() call; did you mean to leave this in?\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+                "text": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run)\n - [https://cwe.mitre.org/data/definitions/250.html](https://cwe.mitre.org/data/definitions/250.html)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.arbitrary-sleep"
+                  "python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run"
                 ]
               }
             },
@@ -2076,27 +2053,26 @@
               }
             },
             {
-              "id": "4f0d019c-5f19-323b-8930-ca90b6ce23b0",
-              "name": "python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run",
+              "id": "7eaa91b0-e099-3ecd-9369-93cad3f7295e",
+              "name": "resources.rules.arbitrary-sleep",
               "shortDescription": {
-                "text": "Opengrep Finding: python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run"
+                "text": "Opengrep Finding: resources.rules.arbitrary-sleep"
               },
               "fullDescription": {
-                "text": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container."
+                "text": "time.sleep() call; did you mean to leave this in?"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "warning"
+                "level": "error"
               },
-              "helpUri": "https://semgrep.dev/r/python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run",
               "help": {
-                "text": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run)\n - [https://cwe.mitre.org/data/definitions/250.html](https://cwe.mitre.org/data/definitions/250.html)\n"
+                "text": "time.sleep() call; did you mean to leave this in?\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "time.sleep() call; did you mean to leave this in?\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "python.docker.security.audit.docker-arbitrary-container-run.docker-arbitrary-container-run"
+                  "resources.rules.arbitrary-sleep"
                 ]
               }
             },
@@ -2149,7 +2125,7 @@
               }
             },
             {
-              "id": "bb0cb533-864a-31dc-8f14-681690e2f1ac",
+              "id": "7f1a24fd-e4dd-3ff5-b626-9575cd11ab7d",
               "name": "resources.rules.string-concat-in-list",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.string-concat-in-list"
@@ -2173,7 +2149,7 @@
               }
             },
             {
-              "id": "7f1a24fd-e4dd-3ff5-b626-9575cd11ab7d",
+              "id": "bb0cb533-864a-31dc-8f14-681690e2f1ac",
               "name": "resources.rules.string-concat-in-list",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.string-concat-in-list"
@@ -2509,30 +2485,6 @@
               }
             },
             {
-              "id": "aabb883a-232c-32b5-8309-e97bb0dd8115",
-              "name": "resources.rules.use-sys-exit",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-sys-exit"
-              },
-              "fullDescription": {
-                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-sys-exit"
-                ]
-              }
-            },
-            {
               "id": "b15fe58d-e8ad-3d95-a4fc-6cb9ef5b1d22",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
@@ -2553,6 +2505,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.return-in-init"
+                ]
+              }
+            },
+            {
+              "id": "aabb883a-232c-32b5-8309-e97bb0dd8115",
+              "name": "resources.rules.use-sys-exit",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-sys-exit"
+              },
+              "fullDescription": {
+                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-sys-exit"
                 ]
               }
             },
@@ -2703,7 +2679,7 @@
               }
             },
             {
-              "id": "5a7a49d6-4536-3c80-9ff1-b4a59f0e61b9",
+              "id": "3399fc06-aaed-371c-9f69-9933437badb6",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-in-init"
@@ -2727,7 +2703,7 @@
               }
             },
             {
-              "id": "3399fc06-aaed-371c-9f69-9933437badb6",
+              "id": "5a7a49d6-4536-3c80-9ff1-b4a59f0e61b9",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-in-init"
@@ -2799,7 +2775,7 @@
               }
             },
             {
-              "id": "043b8f62-7439-3506-a5d0-8b325b3dd4f0",
+              "id": "183b8211-a376-3830-bbc6-e27e76ebae7b",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-in-init"
@@ -2823,7 +2799,7 @@
               }
             },
             {
-              "id": "183b8211-a376-3830-bbc6-e27e76ebae7b",
+              "id": "043b8f62-7439-3506-a5d0-8b325b3dd4f0",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-in-init"
@@ -3087,30 +3063,6 @@
               }
             },
             {
-              "id": "a8e63ecf-083f-3b59-b9d7-4ab9ddaa3ebb",
-              "name": "resources.rules.return-in-init",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.return-in-init"
-              },
-              "fullDescription": {
-                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.return-in-init"
-                ]
-              }
-            },
-            {
               "id": "31668a3d-b06d-3e05-8971-3357fac10b06",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
@@ -3131,6 +3083,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.dlint-catastrophic-redos"
+                ]
+              }
+            },
+            {
+              "id": "a8e63ecf-083f-3b59-b9d7-4ab9ddaa3ebb",
+              "name": "resources.rules.return-in-init",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.return-in-init"
+              },
+              "fullDescription": {
+                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "`return` should never appear inside a class __init__ function. This will cause a runtime error.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.return-in-init"
                 ]
               }
             },
@@ -3256,30 +3232,6 @@
             },
             {
               "id": "db6f33e2-4c5f-306b-b9a9-0b64bd10992f",
-              "name": "resources.rules.missing-ratelimit",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-ratelimit"
-              },
-              "fullDescription": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Function '$FUNC' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart](https://github.com/jsocol/django-ratelimit/blob/main/docs/index.rst#quickstart)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-ratelimit"
-                ]
-              }
-            },
-            {
-              "id": "39762051-c595-3e73-ad05-53ffae7c7d66",
               "name": "resources.rules.missing-ratelimit",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-ratelimit"
@@ -3448,30 +3400,6 @@
               }
             },
             {
-              "id": "4734250f-2896-3888-bb19-e0411776b2a8",
-              "name": "resources.rules.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dlint-catastrophic-redos"
-                ]
-              }
-            },
-            {
               "id": "1653edd5-7b1d-3820-8da3-16aa1d36764f",
               "name": "python.lang.security.audit.exec-detected.exec-detected",
               "shortDescription": {
@@ -3493,6 +3421,30 @@
                 "precision": "very-high",
                 "tags": [
                   "python.lang.security.audit.exec-detected.exec-detected"
+                ]
+              }
+            },
+            {
+              "id": "4734250f-2896-3888-bb19-e0411776b2a8",
+              "name": "resources.rules.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dlint-catastrophic-redos"
                 ]
               }
             }
@@ -3539,6 +3491,37 @@
           "properties": {}
         },
         {
+          "ruleId": "2f127af7-f19c-3a34-8676-0aa34843bda9",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 1,
+                  "endLine": 19,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "FROM chef AS builder"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "02f6b5decb128e845d8a96f5f9eee74a87832131d00f21de011e9a46eb07c35316a7e9adb7af043b3243453bfe9a84adbf8edd9425be896d0701e9d73a580aa5_1"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "85e56ba6-8be4-34d1-b883-27edc39636a6",
           "kind": "fail",
           "level": "warning",
@@ -3570,7 +3553,7 @@
           "properties": {}
         },
         {
-          "ruleId": "2f127af7-f19c-3a34-8676-0aa34843bda9",
+          "ruleId": "de1f393f-71e4-3df7-977f-c688b3732fdb",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -3584,19 +3567,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 19,
+                  "startLine": 2,
                   "startColumn": 1,
-                  "endLine": 19,
-                  "endColumn": 10,
+                  "endLine": 2,
+                  "endColumn": 20,
                   "snippet": {
-                    "text": "FROM chef AS builder"
+                    "text": "FROM lukemathwalker/cargo-chef:latest-rust-1.80 AS chef"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "02f6b5decb128e845d8a96f5f9eee74a87832131d00f21de011e9a46eb07c35316a7e9adb7af043b3243453bfe9a84adbf8edd9425be896d0701e9d73a580aa5_1"
+            "matchBasedId/v1": "fc7f9203dbe4e6f729bcb21fca2240fc922e5ed04299c7100cad510eb87858bcb6de7bbbe26e0eab589ae6d5741c3c94d417eb9ae744e8d360e1d9726c55e9e5_0"
           },
           "properties": {}
         },
@@ -3725,7 +3708,7 @@
           "properties": {}
         },
         {
-          "ruleId": "d7efcb24-f906-3cb9-95ad-17450a48ea71",
+          "ruleId": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -3739,19 +3722,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 122,
+                  "startLine": 102,
                   "startColumn": 1,
-                  "endLine": 122,
+                  "endLine": 102,
                   "endColumn": 12,
                   "snippet": {
-                    "text": "FROM kernel-builder AS exllama-kernels-builder"
+                    "text": "FROM kernel-builder AS flash-att-builder"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_2"
+            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_0"
           },
           "properties": {}
         },
@@ -3787,7 +3770,7 @@
           "properties": {}
         },
         {
-          "ruleId": "2b540f8e-d6b6-3c18-8a86-61341e6aacf2",
+          "ruleId": "d7efcb24-f906-3cb9-95ad-17450a48ea71",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -3801,19 +3784,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 102,
+                  "startLine": 122,
                   "startColumn": 1,
-                  "endLine": 102,
+                  "endLine": 122,
                   "endColumn": 12,
                   "snippet": {
-                    "text": "FROM kernel-builder AS flash-att-builder"
+                    "text": "FROM kernel-builder AS exllama-kernels-builder"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_0"
+            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_2"
           },
           "properties": {}
         },
@@ -3849,37 +3832,6 @@
           "properties": {}
         },
         {
-          "ruleId": "1bc46cf6-face-3c39-80c7-3452d8243629",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 144,
-                  "startColumn": 1,
-                  "endLine": 144,
-                  "endColumn": 12,
-                  "snippet": {
-                    "text": "FROM kernel-builder AS eetq-kernels-builder"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_5"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "0874da03-257d-32e5-8adf-d2fc3749f5f7",
           "kind": "fail",
           "level": "warning",
@@ -3907,6 +3859,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_4"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "1bc46cf6-face-3c39-80c7-3452d8243629",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 1,
+                  "endLine": 144,
+                  "endColumn": 12,
+                  "snippet": {
+                    "text": "FROM kernel-builder AS eetq-kernels-builder"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "bc22f7303569c883cdb5381d2036dd4b14afe9766a32579a09e38d8c4169c26b1f5fa9d611cb335f893f33a537cb73974c5bce14d7e7273affc09c051622656d_5"
           },
           "properties": {}
         },
@@ -4593,6 +4576,37 @@
           "properties": {}
         },
         {
+          "ruleId": "05874534-965b-3a28-b356-4f82cf51a3dc",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile_amd",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 1,
+                  "endLine": 137,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "FROM base AS kernel-builder"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "29d93acbfa045f68accda3cc93eef618f910bae2290fe56db418fd17eb4fbac1ab42c89d679892dd2c7bf021c3d43656bbc8497c3c0dcbcfb45ab5c6d43eeebd_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "166cca2f-b045-3ecb-a6cd-8494fc5ae744",
           "kind": "fail",
           "level": "warning",
@@ -4651,37 +4665,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "e3e92d506064ddce19ea52564584c638872b4192cacc17aed2d2e64d49478426e8256f49ab178f813597a2f3739f713deb434eb8ee26924b9e143147becd24fd_2"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "05874534-965b-3a28-b356-4f82cf51a3dc",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile_amd",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 137,
-                  "startColumn": 1,
-                  "endLine": 137,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "FROM base AS kernel-builder"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "29d93acbfa045f68accda3cc93eef618f910bae2290fe56db418fd17eb4fbac1ab42c89d679892dd2c7bf021c3d43656bbc8497c3c0dcbcfb45ab5c6d43eeebd_0"
           },
           "properties": {}
         },
@@ -4965,6 +4948,37 @@
           "properties": {}
         },
         {
+          "ruleId": "21441810-f1e6-3e8a-808a-c17f8e9d0ae3",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile_intel",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 1,
+                  "endLine": 21,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "a9e30976b1794b003c5cae8d509b361eb29cbb7a810fb94b89ff366bf8cfa77298463aae472b4681a694182269e34a6f618f745ccb551413de80edc123a37e5c_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "7df6eb27-84eb-3b59-97a2-c99e5cdac80c",
           "kind": "fail",
           "level": "warning",
@@ -5027,37 +5041,6 @@
           "properties": {}
         },
         {
-          "ruleId": "21441810-f1e6-3e8a-808a-c17f8e9d0ae3",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The package cache was not deleted after running 'apt-get update', which increases the size of the image. Remove the package cache by appending '&& apt-get clean' at the end of apt-get command chain."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile_intel",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 1,
-                  "endLine": 21,
-                  "endColumn": 19,
-                  "snippet": {
-                    "text": "RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "a9e30976b1794b003c5cae8d509b361eb29cbb7a810fb94b89ff366bf8cfa77298463aae472b4681a694182269e34a6f618f745ccb551413de80edc123a37e5c_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "9a4202ba-331c-344b-8199-36efb946effd",
           "kind": "fail",
           "level": "warning",
@@ -5085,37 +5068,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "e8a4e9776450ffcc040e2d7f42edeb0235bb604f25a90bcc08a769525e9de61bc1af2f83ff364e0ee39e027274964c51eb9ea6f68260cc6a82bc48ef49169b1f_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "e9c959a8-836a-3719-8f23-b8b921695971",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile_intel",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 1,
-                  "endLine": 49,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "USER root"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "aab99fe5010998e71e870e7827c11d45677164f465c7b1e210988c87c16da2ae17c5600a8524879d6d4aeadc1d61d13a6f64d7f9277c2b17b1a3ca6ec8c39e19_0"
           },
           "properties": {}
         },
@@ -5151,11 +5103,11 @@
           "properties": {}
         },
         {
-          "ruleId": "4d53e195-514e-3141-99f1-48e6e1cdb4f6",
+          "ruleId": "e9c959a8-836a-3719-8f23-b8b921695971",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Only the exit code from the final command in this RUN instruction will be evaluated unless 'pipefail' is set.\nIf you want to fail the command at any stage in the pipe, set 'pipefail' by including 'SHELL [\"/bin/bash\", \"-o\", \"pipefail\", \"-c\"] before the command.\nIf you're using alpine and don't have bash installed, communicate this explicitly with `SHELL [\"/bin/ash\"]`.\n"
+            "text": "The last user in the container is 'root'. This is a security hazard because if an attacker gains control of the container they will have root access. Switch back to another user after running commands as 'root'."
           },
           "locations": [
             {
@@ -5165,19 +5117,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 82,
+                  "startLine": 49,
                   "startColumn": 1,
-                  "endLine": 83,
-                  "endColumn": 6,
+                  "endLine": 49,
+                  "endColumn": 10,
                   "snippet": {
-                    "text": "RUN wget -O- https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB \\\n| gpg --dearmor | tee /usr/share/keyrings/oneapi-archive-keyring.gpg > /dev/null && echo \"deb [signed-by=/usr/share/keyrings/oneapi-archive-keyring.gpg] https://apt.repos.intel.com/oneapi all main\" | tee /etc/apt/sources.list.d/oneAPI.list"
+                    "text": "USER root"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "6680e382b711b2fc2cf0b51d8cc30942474519f97259e7f8ff3e3cd906f95e1b0773c52d439c83ed67468341eb52c513a318b2e9b8e2bc4713c4cca33237ca57_1"
+            "matchBasedId/v1": "aab99fe5010998e71e870e7827c11d45677164f465c7b1e210988c87c16da2ae17c5600a8524879d6d4aeadc1d61d13a6f64d7f9277c2b17b1a3ca6ec8c39e19_0"
           },
           "properties": {}
         },
@@ -5209,37 +5161,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "a9e30976b1794b003c5cae8d509b361eb29cbb7a810fb94b89ff366bf8cfa77298463aae472b4681a694182269e34a6f618f745ccb551413de80edc123a37e5c_1"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "a372ba03-4d25-39fc-a85a-d7d0ccdd75c5",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile_intel",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 100,
-                  "startColumn": 1,
-                  "endLine": 100,
-                  "endColumn": 7,
-                  "snippet": {
-                    "text": "RUN cd server && \\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "210165aa110c6b3aa7ed86e81fdbc481c3dcb8a8a10e7213910559b6d0b19ed48bbc8829d2a0f55b7a58f3c40df5276f1b673324198b73a5ba26fd64818940d8_0"
           },
           "properties": {}
         },
@@ -5306,6 +5227,37 @@
           "properties": {}
         },
         {
+          "ruleId": "a372ba03-4d25-39fc-a85a-d7d0ccdd75c5",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile_intel",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 1,
+                  "endLine": 100,
+                  "endColumn": 7,
+                  "snippet": {
+                    "text": "RUN cd server && \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "210165aa110c6b3aa7ed86e81fdbc481c3dcb8a8a10e7213910559b6d0b19ed48bbc8829d2a0f55b7a58f3c40df5276f1b673324198b73a5ba26fd64818940d8_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "6829c931-55c7-31d5-847c-825e30c4b766",
           "kind": "fail",
           "level": "warning",
@@ -5333,68 +5285,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "8f1855cd9efeb46104abe61137ab579ffa06246eadccd6d51cfab7ad6fb4ab8623d6418240d63d2d37f664cf62b0844d1066cecd6675c0ad0a4e0eebce80d1bc_1"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "91b312d3-477b-3a81-ad94-50d989d6b575",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile_intel",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 169,
-                  "startColumn": 1,
-                  "endLine": 169,
-                  "endColumn": 22,
-                  "snippet": {
-                    "text": "RUN pip install https://download.pytorch.org/whl/nightly/cpu/torchaudio-2.4.0.dev20240612%2Bcpu-cp311-cp311-linux_x86_64.whl"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "8f1855cd9efeb46104abe61137ab579ffa06246eadccd6d51cfab7ad6fb4ab8623d6418240d63d2d37f664cf62b0844d1066cecd6675c0ad0a4e0eebce80d1bc_2"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "50466b96-5192-3e3f-ba72-42c996df0478",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile_intel",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 170,
-                  "startColumn": 1,
-                  "endLine": 170,
-                  "endColumn": 23,
-                  "snippet": {
-                    "text": "RUN pip install triton py-libnuma"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "2db25a3d0240338e5bd6c2dbee9541cb1d074f022c42cb0a5594258916303335cd61f3389e143f4764dc765387dfa09d87c312d5cb427b077e41e3296ea66fdd_0"
           },
           "properties": {}
         },
@@ -5430,6 +5320,37 @@
           "properties": {}
         },
         {
+          "ruleId": "50466b96-5192-3e3f-ba72-42c996df0478",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile_intel",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 1,
+                  "endLine": 170,
+                  "endColumn": 23,
+                  "snippet": {
+                    "text": "RUN pip install triton py-libnuma"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "2db25a3d0240338e5bd6c2dbee9541cb1d074f022c42cb0a5594258916303335cd61f3389e143f4764dc765387dfa09d87c312d5cb427b077e41e3296ea66fdd_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "dbc125fb-c196-3dc5-9007-f7ef3605c309",
           "kind": "fail",
           "level": "warning",
@@ -5457,6 +5378,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "210165aa110c6b3aa7ed86e81fdbc481c3dcb8a8a10e7213910559b6d0b19ed48bbc8829d2a0f55b7a58f3c40df5276f1b673324198b73a5ba26fd64818940d8_2"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "d934f3f7-4d4e-3f27-b1de-78d73467caf3",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile_intel",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 1,
+                  "endLine": 193,
+                  "endColumn": 7,
+                  "snippet": {
+                    "text": "RUN cd server && \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "210165aa110c6b3aa7ed86e81fdbc481c3dcb8a8a10e7213910559b6d0b19ed48bbc8829d2a0f55b7a58f3c40df5276f1b673324198b73a5ba26fd64818940d8_5"
           },
           "properties": {}
         },
@@ -5523,37 +5475,6 @@
           "properties": {}
         },
         {
-          "ruleId": "d934f3f7-4d4e-3f27-b1de-78d73467caf3",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile_intel",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 193,
-                  "startColumn": 1,
-                  "endLine": 193,
-                  "endColumn": 7,
-                  "snippet": {
-                    "text": "RUN cd server && \\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "210165aa110c6b3aa7ed86e81fdbc481c3dcb8a8a10e7213910559b6d0b19ed48bbc8829d2a0f55b7a58f3c40df5276f1b673324198b73a5ba26fd64818940d8_5"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "58d01568-d711-30db-915f-a2c1371a4e88",
           "kind": "fail",
           "level": "warning",
@@ -5581,37 +5502,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "a8d831733b37fc4ea8116d2f245be5272bccd5b87610e930024dd7ba6d4fe5d88c38660f9e67ce92aee8826e3638662a66c886bbbb2743fe9ae6b6118e6185ff_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "618bb975-dbec-3ecc-a006-bddbc43d42b4",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "backends/trtllm/Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 1,
-                  "endLine": 13,
-                  "endColumn": 12,
-                  "snippet": {
-                    "text": "FROM nvidia/cuda:12.5.1-cudnn-devel-ubuntu22.04 AS cuda-builder"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "4854cc51b6e5b5ba6b18dc6ac5bb6462f950579285b4ef11bfc16558cb6f204a409570a195348401c0adf0561204d8c57d030e8db3f2c56f4eaff3c191a95db2_0"
           },
           "properties": {}
         },
@@ -5678,6 +5568,37 @@
           "properties": {}
         },
         {
+          "ruleId": "618bb975-dbec-3ecc-a006-bddbc43d42b4",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "backends/trtllm/Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 13,
+                  "endColumn": 12,
+                  "snippet": {
+                    "text": "FROM nvidia/cuda:12.5.1-cudnn-devel-ubuntu22.04 AS cuda-builder"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "4854cc51b6e5b5ba6b18dc6ac5bb6462f950579285b4ef11bfc16558cb6f204a409570a195348401c0adf0561204d8c57d030e8db3f2c56f4eaff3c191a95db2_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "683ab3e2-b199-3334-b5ad-2f32951afd3e",
           "kind": "fail",
           "level": "warning",
@@ -5709,37 +5630,6 @@
           "properties": {}
         },
         {
-          "ruleId": "d54acaa3-11b6-3c9d-99fa-066357e7aadc",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "backends/trtllm/Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 1,
-                  "endLine": 85,
-                  "endColumn": 12,
-                  "snippet": {
-                    "text": "FROM nvidia/cuda:12.5.1-cudnn-runtime-ubuntu22.04 AS runtime"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "4854cc51b6e5b5ba6b18dc6ac5bb6462f950579285b4ef11bfc16558cb6f204a409570a195348401c0adf0561204d8c57d030e8db3f2c56f4eaff3c191a95db2_1"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "ed69c037-d405-3473-813d-847998c18419",
           "kind": "fail",
           "level": "warning",
@@ -5767,6 +5657,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "a7a10024149961f3a3c6ea289b6a195dc095c66d124e60e43dea9096c28c4b3258c0bcdea1d7cb5806d165c2deeb587f443dc6624cf361785f75fc4691bb4ab7_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "d54acaa3-11b6-3c9d-99fa-066357e7aadc",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "backends/trtllm/Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 1,
+                  "endLine": 85,
+                  "endColumn": 12,
+                  "snippet": {
+                    "text": "FROM nvidia/cuda:12.5.1-cudnn-runtime-ubuntu22.04 AS runtime"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "4854cc51b6e5b5ba6b18dc6ac5bb6462f950579285b4ef11bfc16558cb6f204a409570a195348401c0adf0561204d8c57d030e8db3f2c56f4eaff3c191a95db2_1"
           },
           "properties": {}
         },
@@ -5833,37 +5754,6 @@
           "properties": {}
         },
         {
-          "ruleId": "5efdff69-dd92-3bb1-9c99-c9d9e7303bf7",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "clients/python/text_generation/client.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 380,
-                  "startColumn": 16,
-                  "endLine": 386,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "        resp = requests.post(\n            self.base_url,\n            json=request.dict(),\n            headers=self.headers,\n            cookies=self.cookies,\n            timeout=self.timeout,\n        )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "1c8a9f04e816c5e2d38e776bf9656a6c0196589bd28e3e1131e48be8ec629da57b6d68a2428876327a2fa8af1163792a844deb14aad1d1cdf15ee4a4b7f09f9f_4"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "2fcdf144-d6b9-3416-b252-7a1c232939f4",
           "kind": "fail",
           "level": "warning",
@@ -5891,6 +5781,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "1c8a9f04e816c5e2d38e776bf9656a6c0196589bd28e3e1131e48be8ec629da57b6d68a2428876327a2fa8af1163792a844deb14aad1d1cdf15ee4a4b7f09f9f_2"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "5efdff69-dd92-3bb1-9c99-c9d9e7303bf7",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "There's an HTTP request made with requests,\nbut the raise_for_status() utility method isn't used.\nThis can result in request errors going unnoticed\nand your code behaving in unexpected ways,\nsuch as if your authorization API returns a 500 error\nwhile you're only checking for a 401."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "clients/python/text_generation/client.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 380,
+                  "startColumn": 16,
+                  "endLine": 386,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "        resp = requests.post(\n            self.base_url,\n            json=request.dict(),\n            headers=self.headers,\n            cookies=self.cookies,\n            timeout=self.timeout,\n        )"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "1c8a9f04e816c5e2d38e776bf9656a6c0196589bd28e3e1131e48be8ec629da57b6d68a2428876327a2fa8af1163792a844deb14aad1d1cdf15ee4a4b7f09f9f_4"
           },
           "properties": {}
         },
@@ -5957,37 +5878,6 @@
           "properties": {}
         },
         {
-          "ruleId": "9cceaed1-92f9-368a-9f37-3b49363817b0",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Function '_chat_single_response' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "clients/python/text_generation/client.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 736,
-                  "startColumn": 5,
-                  "endLine": 746,
-                  "endColumn": 47,
-                  "snippet": {
-                    "text": "    async def _chat_single_response(self, request):\n        async with ClientSession(\n            headers=self.headers, cookies=self.cookies, timeout=self.timeout\n        ) as session:\n            async with session.post(\n                f\"{self.base_url}/v1/chat/completions\", json=request.dict()\n            ) as resp:\n                payload = await resp.json()\n                if resp.status != 200:\n                    raise parse_error(resp.status, payload)\n                return ChatComplete(**payload)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "c91212247cbb64dfb1450995ec4d5faf20dbaee7b8589a034a34e7fb5e2b1f44bcac52d19213a2e4ceac9c385479157ed1132b176c04e26f0a4e3c147a823692_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "4a74db2b-c9c1-32ea-a336-8c5fb1795b60",
           "kind": "fail",
           "level": "warning",
@@ -6015,6 +5905,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "b679b208a738dd73dec21e98a6d74d6c7674d7b7baf650b3dce32d1d0207a135115b53f41f519cf736871ed695fe8d21835bb51f53e84e06ced5a1df950bfcc4_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "9cceaed1-92f9-368a-9f37-3b49363817b0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Function '_chat_single_response' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "clients/python/text_generation/client.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 736,
+                  "startColumn": 5,
+                  "endLine": 746,
+                  "endColumn": 47,
+                  "snippet": {
+                    "text": "    async def _chat_single_response(self, request):\n        async with ClientSession(\n            headers=self.headers, cookies=self.cookies, timeout=self.timeout\n        ) as session:\n            async with session.post(\n                f\"{self.base_url}/v1/chat/completions\", json=request.dict()\n            ) as resp:\n                payload = await resp.json()\n                if resp.status != 200:\n                    raise parse_error(resp.status, payload)\n                return ChatComplete(**payload)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "c91212247cbb64dfb1450995ec4d5faf20dbaee7b8589a034a34e7fb5e2b1f44bcac52d19213a2e4ceac9c385479157ed1132b176c04e26f0a4e3c147a823692_0"
           },
           "properties": {}
         },
@@ -6081,11 +6002,11 @@
           "properties": {}
         },
         {
-          "ruleId": "7eaa91b0-e099-3ecd-9369-93cad3f7295e",
+          "ruleId": "4f0d019c-5f19-323b-8930-ca90b6ce23b0",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "time.sleep() call; did you mean to leave this in?"
+            "text": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container."
           },
           "locations": [
             {
@@ -6095,19 +6016,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 282,
-                  "startColumn": 17,
-                  "endLine": 282,
-                  "endColumn": 30,
+                  "startLine": 520,
+                  "startColumn": 21,
+                  "endLine": 533,
+                  "endColumn": 10,
                   "snippet": {
-                    "text": "                time.sleep(1)"
+                    "text": "        container = client.containers.run(\n            DOCKER_IMAGE,\n            command=args,\n            name=container_name,\n            environment=env,\n            auto_remove=False,\n            detach=True,\n            device_requests=device_requests,\n            devices=devices,\n            volumes=volumes,\n            ports={\"80/tcp\": port},\n            healthcheck={\"timeout\": int(10 * 1e9)},\n            shm_size=\"1G\",\n        )"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "208349ec64c7fed2979f91d7461c3255bc0f0dbfc07dcc14e0f890dbc113510afe76be138f602cbcec882da8889167d9a2545742af229418334d19bbe735ea16_0"
+            "matchBasedId/v1": "7efe8288913a1a10aeaf1b7680072fff56f21892e97a4d8ba2efa629a1175933a828c43d50b04f9c0695977c001936431d5968b8c22ddcfd46d8c011adc51b70_0"
           },
           "properties": {}
         },
@@ -6143,11 +6064,11 @@
           "properties": {}
         },
         {
-          "ruleId": "4f0d019c-5f19-323b-8930-ca90b6ce23b0",
+          "ruleId": "7eaa91b0-e099-3ecd-9369-93cad3f7295e",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "If unverified user data can reach the `run` or `create` method it can result in running arbitrary container."
+            "text": "time.sleep() call; did you mean to leave this in?"
           },
           "locations": [
             {
@@ -6157,19 +6078,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 520,
-                  "startColumn": 21,
-                  "endLine": 533,
-                  "endColumn": 10,
+                  "startLine": 282,
+                  "startColumn": 17,
+                  "endLine": 282,
+                  "endColumn": 30,
                   "snippet": {
-                    "text": "        container = client.containers.run(\n            DOCKER_IMAGE,\n            command=args,\n            name=container_name,\n            environment=env,\n            auto_remove=False,\n            detach=True,\n            device_requests=device_requests,\n            devices=devices,\n            volumes=volumes,\n            ports={\"80/tcp\": port},\n            healthcheck={\"timeout\": int(10 * 1e9)},\n            shm_size=\"1G\",\n        )"
+                    "text": "                time.sleep(1)"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "7efe8288913a1a10aeaf1b7680072fff56f21892e97a4d8ba2efa629a1175933a828c43d50b04f9c0695977c001936431d5968b8c22ddcfd46d8c011adc51b70_0"
+            "matchBasedId/v1": "208349ec64c7fed2979f91d7461c3255bc0f0dbfc07dcc14e0f890dbc113510afe76be138f602cbcec882da8889167d9a2545742af229418334d19bbe735ea16_0"
           },
           "properties": {}
         },
@@ -6236,37 +6157,6 @@
           "properties": {}
         },
         {
-          "ruleId": "bb0cb533-864a-31dc-8f14-681690e2f1ac",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Detected strings that are implicitly concatenated inside a list.\nPython will implicitly concatenate strings when not explicitly delimited.\nWas this supposed to be individual elements of the list?\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "integration-tests/models/test_flash_llama_prefix.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 116,
-                  "startColumn": 9,
-                  "endLine": 117,
-                  "endColumn": 65,
-                  "snippet": {
-                    "text": "        \"고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.\"\n        \"Which hero is the best in Heroes of Might and Magic 3?\","
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "2465d31f8dd9bb6f440eee762c6c7489b790618df8c749421537197787c3948408bf555c2ce65ef52becbd5ef243d61a8f42cc6ab68aed9e8239f9bc8a9c2180_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "7f1a24fd-e4dd-3ff5-b626-9575cd11ab7d",
           "kind": "fail",
           "level": "warning",
@@ -6294,6 +6184,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "6ee600bb7074803543eac6bea0560b9dcc8d0fb33ec6e7a7a5e79bb3a801b3fb390d2b6957714555baa258f8339b10b441d89c591d59197a450794e9f6e256f8_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "bb0cb533-864a-31dc-8f14-681690e2f1ac",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected strings that are implicitly concatenated inside a list.\nPython will implicitly concatenate strings when not explicitly delimited.\nWas this supposed to be individual elements of the list?\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "integration-tests/models/test_flash_llama_prefix.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 9,
+                  "endLine": 117,
+                  "endColumn": 65,
+                  "snippet": {
+                    "text": "        \"고등교육의 필요성에 관한 영어 에세이를 1000자 이내로 작성하시오.\"\n        \"Which hero is the best in Heroes of Might and Magic 3?\","
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "2465d31f8dd9bb6f440eee762c6c7489b790618df8c749421537197787c3948408bf555c2ce65ef52becbd5ef243d61a8f42cc6ab68aed9e8239f9bc8a9c2180_0"
           },
           "properties": {}
         },
@@ -6701,37 +6622,6 @@
           "properties": {}
         },
         {
-          "ruleId": "aabb883a-232c-32b5-8309-e97bb0dd8115",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server/text_generation_server/interceptor.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 17,
-                  "endLine": 28,
-                  "endColumn": 24,
-                  "snippet": {
-                    "text": "                exit(1)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ab3332b137a75ea427a1c2afd0710a3511bb63146f4ac6798202692ac351e0c302eb167461cc863270265dd148d6a1b1c8d779bc3cba1270c8ba7bbfaae96ad8_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "b15fe58d-e8ad-3d95-a4fc-6cb9ef5b1d22",
           "kind": "fail",
           "level": "warning",
@@ -6759,6 +6649,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "6d81d9a73948a17025ed18c6b5295ed1f9b308d639f7bc72d049077e1937248562d95d2170da122d0f26b3e733a22ef777767398b6f371fa23d9acf1b79ace55_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "aabb883a-232c-32b5-8309-e97bb0dd8115",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server/text_generation_server/interceptor.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 17,
+                  "endLine": 28,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "                exit(1)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "ab3332b137a75ea427a1c2afd0710a3511bb63146f4ac6798202692ac351e0c302eb167461cc863270265dd148d6a1b1c8d779bc3cba1270c8ba7bbfaae96ad8_0"
           },
           "properties": {}
         },
@@ -6949,37 +6870,6 @@
           "properties": {}
         },
         {
-          "ruleId": "5a7a49d6-4536-3c80-9ff1-b4a59f0e61b9",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server/text_generation_server/models/custom_modeling/flash_gemma2_modeling.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 273,
-                  "startColumn": 28,
-                  "endLine": 278,
-                  "endColumn": 14,
-                  "snippet": {
-                    "text": "            else lambda x: torch.nn.functional.gelu(\n                x,\n                approximate=(\n                    \"tanh\" if act in [\"gelu_fast\", \"gelu_pytorch_tanh\"] else \"none\"\n                ),\n            )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ac76e71916aea9f1750d6f30ca69e92c59ed5785a6180fb76e19159960c3c003088ad8acc7cfc42f962761fb9c0cfcb9401650e55099d784334d0f4fa1745203_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "3399fc06-aaed-371c-9f69-9933437badb6",
           "kind": "fail",
           "level": "warning",
@@ -7007,6 +6897,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "208e3b179982baa4a5da55ce3891c7a821b891d207145ff5b8cc0d701f75e01037f1315b7015dc19e3c346bdc47aa618ea1bef57844d167881892cd7c7d3a9a4_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "5a7a49d6-4536-3c80-9ff1-b4a59f0e61b9",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server/text_generation_server/models/custom_modeling/flash_gemma2_modeling.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 28,
+                  "endLine": 278,
+                  "endColumn": 14,
+                  "snippet": {
+                    "text": "            else lambda x: torch.nn.functional.gelu(\n                x,\n                approximate=(\n                    \"tanh\" if act in [\"gelu_fast\", \"gelu_pytorch_tanh\"] else \"none\"\n                ),\n            )"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "ac76e71916aea9f1750d6f30ca69e92c59ed5785a6180fb76e19159960c3c003088ad8acc7cfc42f962761fb9c0cfcb9401650e55099d784334d0f4fa1745203_0"
           },
           "properties": {}
         },
@@ -7073,37 +6994,6 @@
           "properties": {}
         },
         {
-          "ruleId": "043b8f62-7439-3506-a5d0-8b325b3dd4f0",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server/text_generation_server/models/custom_modeling/flash_llama_modeling.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 254,
-                  "startColumn": 28,
-                  "endLine": 261,
-                  "endColumn": 14,
-                  "snippet": {
-                    "text": "            else lambda x: torch.nn.functional.gelu(\n                x,\n                approximate=(\n                    \"tanh\"\n                    if self.hidden_act in [\"gelu_fast\", \"gelu_pytorch_tanh\"]\n                    else \"none\"\n                ),\n            )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "05bbf29806c51b640f9b56d6350a86e7a90bcdff7f3ed3ff744ec3bfe78421ed9d94fd0b3a778e0be3f639654ede0713c2c4e949cf66301d928fffe09682e4e4_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "183b8211-a376-3830-bbc6-e27e76ebae7b",
           "kind": "fail",
           "level": "warning",
@@ -7131,6 +7021,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "79f7411d554e804333b263c453a928084d61a81269588c51591117eba89a02804d6c5e0fcac2671c1a9131ef51fe5dbbd75f36bdc73b761f9e0badf13eefa92c_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "043b8f62-7439-3506-a5d0-8b325b3dd4f0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server/text_generation_server/models/custom_modeling/flash_llama_modeling.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 254,
+                  "startColumn": 28,
+                  "endLine": 261,
+                  "endColumn": 14,
+                  "snippet": {
+                    "text": "            else lambda x: torch.nn.functional.gelu(\n                x,\n                approximate=(\n                    \"tanh\"\n                    if self.hidden_act in [\"gelu_fast\", \"gelu_pytorch_tanh\"]\n                    else \"none\"\n                ),\n            )"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "05bbf29806c51b640f9b56d6350a86e7a90bcdff7f3ed3ff744ec3bfe78421ed9d94fd0b3a778e0be3f639654ede0713c2c4e949cf66301d928fffe09682e4e4_0"
           },
           "properties": {}
         },
@@ -7445,37 +7366,6 @@
           "properties": {}
         },
         {
-          "ruleId": "a8e63ecf-083f-3b59-b9d7-4ab9ddaa3ebb",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server/text_generation_server/models/custom_modeling/t5_modeling.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 187,
-                  "startColumn": 28,
-                  "endLine": 187,
-                  "endColumn": 75,
-                  "snippet": {
-                    "text": "            else lambda x: torch.nn.functional.gelu(x, approximate=\"tanh\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "da2fd922fc92710a87acf60a5e5f7247257f4cfb315e178262a80ccf8f113bbeea023df72f98b93b566c9ee3589d402e32bcf2a131afcf58eb07d2d823c40d9e_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "31668a3d-b06d-3e05-8971-3357fac10b06",
           "kind": "fail",
           "level": "warning",
@@ -7503,6 +7393,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "9fa09af7d78b36c955312ebb6a2e5f9b0eeb843fccd4924b96a5ba80727c744c08ac4284589487fd3bc78b2ccb3af85fcb367bb384d39a8bb843f0e88490713d_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "a8e63ecf-083f-3b59-b9d7-4ab9ddaa3ebb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server/text_generation_server/models/custom_modeling/t5_modeling.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 187,
+                  "startColumn": 28,
+                  "endLine": 187,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "            else lambda x: torch.nn.functional.gelu(x, approximate=\"tanh\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "da2fd922fc92710a87acf60a5e5f7247257f4cfb315e178262a80ccf8f113bbeea023df72f98b93b566c9ee3589d402e32bcf2a131afcf58eb07d2d823c40d9e_0"
           },
           "properties": {}
         },
@@ -7724,37 +7645,6 @@
           "properties": {}
         },
         {
-          "ruleId": "ba0e7160-5645-3b95-8850-4ef1ec8bf822",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Function 'Prefill' is missing a rate-limiting decorator.\nHigh volume traffic to this function could starve application\nresources. Consider adding rate limiting from a library such\nas 'django-ratelimit'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server/text_generation_server/server.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 129,
-                  "startColumn": 5,
-                  "endLine": 156,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "    async def Prefill(self, request, context):\n        start = time.time_ns()\n        if (\n            self.model.batch_type in VLM_BATCH_TYPES\n        ):  # Hack, i would rather use kwargs in the `from_pb` call\n            batch = self.model.batch_type.from_pb_processor(\n                request.batch,\n                self.model.tokenizer,\n                self.model.processor,\n                self.model.model.config,\n                self.model.dtype,\n                self.model.device,\n            )\n        else:\n            batch = self.model.batch_type.from_pb(\n                request.batch, self.model.tokenizer, self.model.dtype, self.model.device\n            )\n\n        generations, next_batch, timings = self.model.generate_token(batch)\n        self.cache.set(next_batch)\n\n        return generate_pb2.PrefillResponse(\n            generations=[generation.to_pb() for generation in generations],\n            batch=next_batch.to_pb() if next_batch else None,\n            forward_ns=timings[0],\n            decode_ns=timings[1],\n            total_ns=time.time_ns() - start,\n        )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "bdb171f6cec575118d492fb5bc44d354953162e1f58ec5cfc0f52747a97876bf4df3bb9d3b48f1ca0ff314d89e89279a60391ca93559039a8a037d5c34c9bc9e_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "5e9d92dd-278a-32ea-bae6-e15d9620ed99",
           "kind": "fail",
           "level": "warning",
@@ -7910,37 +7800,6 @@
           "properties": {}
         },
         {
-          "ruleId": "4734250f-2896-3888-bb19-e0411776b2a8",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `f\"{stop_sequence}$\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "server/text_generation_server/utils/tokens.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 134,
-                  "startColumn": 22,
-                  "endLine": 134,
-                  "endColumn": 53,
-                  "snippet": {
-                    "text": "        self.regex = re.compile(f\"{stop_sequence}$\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "3ba9a7d3dadecda67d92540f57a6868f29aae74c58cb049e2781369f9b174c0bbe03edb85fc1f5a100b4fb19f82df1c69373d5a976edb82f5733f8430b0408c5_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "1653edd5-7b1d-3820-8da3-16aa1d36764f",
           "kind": "fail",
           "level": "warning",
@@ -7968,6 +7827,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "f434c9f5fa1fa08f8c6890ea84104f79baceb89e0c2f0722bf84e2b0e884dd5b4005573dff5703d310f7e4171d72b9556b6961c47dd48d0804ed42b66141c4ef_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "4734250f-2896-3888-bb19-e0411776b2a8",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `f\"{stop_sequence}$\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "server/text_generation_server/utils/tokens.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 22,
+                  "endLine": 134,
+                  "endColumn": 53,
+                  "snippet": {
+                    "text": "        self.regex = re.compile(f\"{stop_sequence}$\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "3ba9a7d3dadecda67d92540f57a6868f29aae74c58cb049e2781369f9b174c0bbe03edb85fc1f5a100b4fb19f82df1c69373d5a976edb82f5733f8430b0408c5_0"
           },
           "properties": {}
         }
